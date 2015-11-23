@@ -3,6 +3,7 @@ MAINTAINER Sol&TIC <serveur@soletic.org>
 
 ENV LANG fr_FR.UTF-8
 ENV LANGUAGE fr_FR
+ENV TZ "Europe/Paris"
 ENV DEBIAN_FRONTEND noninteractive
 
 # Allow restart/stop service when we upgrade (see http://askubuntu.com/questions/365911/why-the-services-do-not-start-at-installation)
