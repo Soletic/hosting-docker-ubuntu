@@ -21,5 +21,6 @@ ADD ubuntu-setup.conf /etc/supervisor/conf.d/ubuntu-setup.conf
 RUN mkdir -p /root/scripts
 ADD ubuntu.start.sh /root/scripts/ubuntu.start.sh
 RUN chmod u+x /root/scripts/ubuntu.start.sh
+COPY crontab /etc/crontab
 
 CMD ["/run.sh", "-D", "FOREGROUND"]
